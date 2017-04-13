@@ -24,11 +24,18 @@ ssh-add -A &> /dev/null
 
 # Aliases
 alias pgboot='pg_ctl -D ~/Dev/kufak-suite/pg_db start'
-alias cp='cp -iv'                    # Preferred 'cp' implementation
-alias mv='mv -iv'                    # Preferred 'mv' implementation
-alias mkdir='mkdir -pv'              # Preferred 'mkdir' implementation
-alias ll='ls -GlAhp'                 # Preferred 'ls' implementation
-alias hell='cd ~/Dev/hellblazer'	 # skip straight to hellblazer
+alias cp='cp -iv'           # Preferred 'cp' implementation
+alias mv='mv -iv'           # Preferred 'mv' implementation
+alias mkdir='mkdir -pv'     # Preferred 'mkdir' implementation
+alias ll='ls -GlAhp'        # Preferred 'ls' implementation
+
+alias hell='cd ~/Dev/hellblazer'        # skip straight to hellblazer
+alias kuf='cd ~/Dev/kufak-suite'        # skip straight to kufak-suite
+alias gs='git status'                   # git status shortcut
+alias gc='git commit -m'                # commit message shortcut
+alias ga='git add'                      # git add shortcut
+alias pmaster='git pull origin master'  # shortcut to pull from master
+alias reb='git rebase master'           # shortcut to rebase from master
 
 # Functions
 cd() { builtin cd "$@"; ls; } # automatically run ls after changing directories
